@@ -1,0 +1,85 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: "ingress-v1.demo-oci.tk"
+    http:
+      paths:
+      - path: /
+        pathType: Exact
+        backend:
+          service:
+            name: hello-v1-svc
+            port:
+              number: 80
+
+  - host: "ingress-v2.demo-oci.tk"
+    http:
+      paths:
+      - path: /
+        pathType: Exact
+        backend:
+          service:
+            name: hello-v2-svc
+            port:
+              number: 80
+
+  - host: "echo-java.demo-oci.tk"
+    http:
+      paths:
+      - path: /
+        pathType: Exact
+        backend:
+          service:
+            name: echo-java-svc
+            port:
+              number: 80
+
+  - host: "python-hello.demo-oci.tk"
+    http:
+      paths:
+      - path: /
+        pathType: Exact
+        backend:
+          service:
+            name: python-hello-svc
+            port:
+              number: 80
+
+  - host: "todo-app.demo-oci.tk"
+    http:
+      paths:
+      - pathType: Exact
+        path: /
+        backend:
+          service:
+            name: todo-app-svc
+            port:
+              number: 80
+
+  - host: "healthcare.demo-oci.tk"
+    http:
+      paths:
+      - pathType: Exact
+        path: /
+        backend:
+          service:
+            name: healthcare-app-svc
+            port:
+              number: 80
+
+  - host: "catalog.demo-oci.tk"
+    http:
+      paths:
+      - pathType: Exact
+        path: /
+        backend:
+          service:
+            name: catalog-app-svc
+            port:
+              number: 80
