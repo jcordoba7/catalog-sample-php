@@ -7,7 +7,7 @@ document.write(
 '					<h3 style = "color: #DAA520;">Informaci&oacuten</h3>'+
 '				</header>'+
 '				<p><strong>Primer Contacto</strong>'+
-'				<br>MARIA CLAUDIA ARIAS'+
+'				<br>MARIA ARIAS'+
 '               <br>mariaclau@msn.com'+
 '				<br>Tel&eacute;fono: 3101234567</p>'+
 '			</section>'+
