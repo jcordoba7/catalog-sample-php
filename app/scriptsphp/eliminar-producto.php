@@ -63,5 +63,5 @@
 
 	fclose($file);
 
-	echo '<p ALIGN=center><a href="http://../index.php"><button>Regresar</button></a></p>';
+	echo '<p ALIGN=center><a href="../index.php"><button>Regresar</button></a></p>';
 ?>

@@ -93,5 +93,5 @@
 		echo "<br/><h2><p ALIGN=center style = 'color:red;'>Oops! ... El producto " . $_POST["nombreproducto"] . " ya existe en el inventario ...</p></h2>";
 	}
 
-	echo '<p ALIGN=center><a href="http://../index.php"><button>Regresar</button></a></p>';
+	echo '<p ALIGN=center><a href="../index.php"><button>Regresar</button></a></p>';
 ?>

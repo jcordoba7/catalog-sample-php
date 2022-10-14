@@ -28,6 +28,6 @@
 	  echo "No se pudo modificar el contenido por denegación de acceso a los archivos.";
 	}
 
-	echo '<p align="center"><a href="http://../index.php"><button>Regresar</button></a></p>';
+	echo '<p align="center"><a href="../index.php"><button>Regresar</button></a></p>';
 
 ?>

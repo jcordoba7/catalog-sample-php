@@ -31,6 +31,6 @@
 		echo "<br/><h2><p ALIGN=center style = 'color: red;'>Oops ... por alguna razon el mensaje no pudo ser enviado, intentalo de nuevo.</p></h2>";
 	}
 	
-	echo '<p align="center"><a href="http://../index.php"><button>Regresar</button></a></p>';
+	echo '<p align="center"><a href="../index.php"><button>Regresar</button></a></p>';
 
 ?>
